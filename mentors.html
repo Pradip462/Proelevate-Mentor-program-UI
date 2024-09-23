@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./src/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Find a Mentor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><strong style="color: #FF5722;">Top</strong> Mentors</h1>
+    </header>
+    <div class="mentor-list">
+        <div class="mentor-card">
+            <img src="./src/mentor1.jpg" alt="Mentor 1">
+            <div class="rating">
+                <h4 style="margin: 0px;">Minnie White</h4>
+                <span class="star">★</span>
+                <span>4.8</span>
+            </div>
+            <div class="info">
+                <p>Management Consulting | IIM Bangalore | Ex-Data Scientist | IIT Guwahati</p>
+            </div>
+            <button onclick="viewSlots('John Doe')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor2.jpg" alt="Mentor 2">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor3.jpg" alt="Mentor 3">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor4.jpg" alt="Mentor 4">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor5.jpg" alt="Mentor 5">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor6.jpg" alt="Mentor 6">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor7.jpg" alt="Mentor 7">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor8.jpg" alt="Mentor 8">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor9.jpg" alt="Mentor 9">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+        <div class="mentor-card">
+            <img src="./src/mentor10.jpg" alt="Mentor 10">
+            <div class="rating">
+                <h4 style="margin: 0px;">Ryan Cooper</h4>
+                <span class="star">★</span>
+                <span>4.5</span>
+            </div>
+            <div class="info">
+                <p>Data Sceintist @Google |Ex-Microsoft | Software Developer | IIT Bomabay  </p>
+            </div>
+            <button onclick="viewSlots('Jane Smith')">View Slots</button>
+        </div>
+    </div>
+    <!-- footer  -->
+    <script>
+        function viewSlots(mentorName) {
+            window.location.href = `form.html?mentor=${mentorName}`;
+        }
+    </script>
+</body>
+</html>

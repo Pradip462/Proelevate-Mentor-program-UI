@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./src/logo.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Schedule a Meeting</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><strong style="color: #FF5722;">Schedule a Meeting</strong></h1>
+    </header>
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="meeting-summary">Meeting Requirement Summary (max 100 characters):</label>
+                <input type="text" id="meeting-summary" name="meeting-summary" maxlength="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time-slot">Choose a Time Slot:</label>
+                <div class="time-slot-container">
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-1" name="time-slot" value="2023-03-06 10:00 AM">
+                        <label for="time-slot-1">Monday, March 6, 10:00 AM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-2">Monday, March 6, 2:00 PM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-3">Monday, March 6, 2:00 PM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-4">Monday, March 6, 2:00 PM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-4">Monday, March 6, 2:00 PM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-4">Monday, March 6, 2:00 PM</label>
+                    </div>
+                    <div class="time-slot">
+                        <input type="radio" id="time-slot-2" name="time-slot" value="2023-03-06 2:00 PM">
+                        <label for="time-slot-4">Monday, March 6, 2:00 PM</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Schedule Meeting</button>
+        </form>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const mentorName = urlParams.get('mentor');
+
+        document.querySelector('header h1').innerHTML += ` with ${mentorName}`;
+    </script>
+</body>
+</html>
